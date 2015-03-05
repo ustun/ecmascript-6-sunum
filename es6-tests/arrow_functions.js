@@ -9,12 +9,15 @@ for (var i = 0; i < x.length; i++) {
 }
 
 
-     console.log("sum of even numbers", sum);
+console.log("sum of even numbers", sum);
 
-     var evens = x.filter(function (i) {return i % 2 === 0});
-     var sumEvens = evens.reduce(function (a, b) { return a + b});
+/* process.exit() */
 
-     console.log("sum of even numbers with filter and reduce", sumEvens);
+
+var evens = x.filter(function (i) {return i % 2 === 0});
+var sumEvens = evens.reduce(function (a, b) { return a + b});
+
+console.log("sum of even numbers with filter and reduce", sumEvens);
 
 
 var sum = x.filter(i => i % 2 === 0)
